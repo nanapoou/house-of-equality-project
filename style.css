@@ -127,6 +127,7 @@ body {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5%;
     display: block;
 }
 
@@ -143,7 +144,7 @@ body {
 .dropbtn {
     background-color: rgb(241, 126, 87);
     color: white;
-    font-size: 25pt;
+    font-size: 20pt;
     border: none;
     cursor: pointer;
     width: 120%;
