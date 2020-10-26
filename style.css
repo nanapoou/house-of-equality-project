@@ -74,6 +74,7 @@ body {
     display: none;
 }
 
+
 /* .house {
     display: block;
     margin-left: auto;
@@ -101,29 +102,27 @@ body {
 
 .wrapper-one {
     display: block;
-    border-style: solid;
-    border-color: red;
     grid-gap: 10px;
     width: 100vw;
     height: 100vh;
+    position: absolute;
+    animation-name: zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
 .a {
-    border-style: solid;
-    border-color: blue;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
 .b {
-    border-style: solid;
-    border-color: yellow;
     grid-column-start: 1;
     grid-column-end: 3;
     /* padding-bottom: 0%; */
 }
 
-.house{
+.house {
     width: 25%;
     height: auto;
     margin-left: auto;
@@ -132,15 +131,11 @@ body {
 }
 
 .c {
-    border-style: solid;
-    border-color: violet;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
 .d {
-    border-style: solid;
-    border-color: aqua;
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -156,54 +151,115 @@ body {
     font-family: 'Kanit', 'Medium', sans-serif;
     border-radius: 5px;
     box-shadow: 0px 4px 2px #888888;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
     margin-left: 85%;
     margin-top: 2%;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 300px;
     overflow: auto;
     z-index: 1;
     right: -20px;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: rgb(45, 83, 121);
     padding: 3px 5px;
     text-decoration: none;
     display: block;
-    font-family: 'Kanit', 'Regular',sans-serif;
+    font-family: 'Kanit', 'Regular', sans-serif;
     text-align: right;
     font-size: 13pt;
-  }
-  
-  .dropdown a:hover {
-      color: rgb(241, 126, 87);
-      font-family: 'Kanit', 'Medium', sans-serif;
 }
-  
-.show {display: block;}
 
-.explore{
-      width: 15%;
-      height: auto;
-      margin-left: 45%;
-      margin-right: auto;
-      display: block;
-      margin-top: 1%;
-  }
+.dropdown a:hover {
+    color: rgb(241, 126, 87);
+    font-family: 'Kanit', 'Medium', sans-serif;
+}
 
-.hint{
+.show {
+    display: block;
+}
+
+.explore {
+    width: 15%;
+    height: auto;
+    margin-left: 45%;
+    margin-right: auto;
+    display: block;
+    margin-top: 1%;
+}
+
+.hint {
     margin-left: 41.8%;
     margin-right: auto;
     display: block;
     margin-top: 4%;
     width: 20%;
+}
+
+.cloud {
+    margin-left: 40%;
+    margin-right: auto;
+    display: block;
+    margin-top: 7%;
+    width: 70%;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.9;
+    animation-name: C_animation;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+.cloud2 {
+    margin-right: auto;
+    right: 20%;
+    display: block;
+    width: 80%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    top: 5pt;
+    animation-name: C2_animation;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes C_animation {
+    from {
+        margin-left: 40%;
+        opacity: 0.9;
+    }
+    to {
+        margin-left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes C2_animation {
+    from {
+        right: 20%;
+        opacity: 0.9;
+    }
+    to {
+        right: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
 }
