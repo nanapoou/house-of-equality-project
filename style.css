@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    display: flex;
+    flex-direction: row;
+    width: 900vw;
+}
+
+.one {
+    background: rgb(229, 233, 236);
+}
+
+.two {
+    background-color: green;
+}
+
+.three {
+    background: blue;
+}
+
+.four {
+    background: yellow;
+}
+
+.five {
+    background: orange;
+}
+
+.six {
+    background: lime;
+}
+
+.seven {
+    background: pink;
+}
+
+.eight {
+    background: purple;
+}
+
+.nine {
+    background: cyan;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    /*lock page*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.outer-wrapper {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.house {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    width: 25%;
+    height: 25%;
+}
+
+.explore {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    width: 25%;
+    height: 25%;
+}
+
+.bgtwo{
+    background-image: url('hallway-bg-edit.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
