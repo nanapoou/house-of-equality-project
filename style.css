@@ -196,6 +196,10 @@ body {
     margin-right: auto;
     display: block;
     margin-top: 1%;
+    /* animation-name: scaling;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
 }
 
 .hint {
@@ -264,3 +268,16 @@ body {
         transform: scale(1);
     }
 }
+
+
+/* @keyframes scaling {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+} */
