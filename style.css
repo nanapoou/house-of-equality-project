@@ -22,9 +22,91 @@ body {
     background: rgb(229, 233, 236);
 }
 
+/* Page Two */
+
 .two {
-    background-color: green;
+    background-color: rgb(231,211,207);
 }
+
+#locker{
+    position: absolute;
+    display: block;
+    margin-left: 5.58%;
+    margin-top: 3.9%;
+    z-index: 102 !important;
+}
+
+#frame{
+    position: absolute;
+    display: block;
+    margin-left: 5.4%;
+    margin-top: 0.82%;
+    z-index: 10 !important;
+}
+
+#hing{
+    position: absolute;
+    display: block;
+    margin-left: 1.85%;
+    margin-top: 0.55%;
+    z-index: 10 !important;
+}
+
+.dropdown1 {
+    position: absolute;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 0.25%;
+    z-index: 102 !important;
+}
+
+#myModal{
+    position: absolute;
+    display: inline-block;
+    margin-left: 1%;
+    margin-top: 0.25%;
+    z-index: 102 !important;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none ; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    overflow: auto; /* Enable scroll if needed */
+    margin-left: 11.1% !important;
+    margin-bottom: 10% !important;
+    width: 11.13% !important;
+    height: 100% !important;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    margin-left: 31%;
+    margin-top:8%;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40% !important;
+    height: 60%;
+  }
+  
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Page Three*/
 
 .three {
     background: blue;
@@ -312,29 +394,5 @@ body {
     to {
         margin-left: 43%;
         width: 20%;
-    }
-}
-
-@media screen and (max-width: 813px) {
-    .dropbtn {
-        font-size: 18pt;
-        width: 100%;
-        height: 25%;
-    }
-    .dropdown {
-        margin-top: 2%;
-    }
-    .dropdown a:hover {
-        text-decoration: none;
-    }
-    .dropdown-content a {
-        font-size: 8pt;
-        padding: 3px 22px;
-    }
-    .house {
-        margin-top: auto;
-    }
-    .dropdown {
-        margin-left: 90%;
     }
 }
