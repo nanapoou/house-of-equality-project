@@ -139,7 +139,42 @@ body {
 /* Page Three*/
 
 .three {
-    background: blue;
+    background-image: url(house_of_equality/02-living-room/lvng-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cup {
+    position: absolute;
+    display: block;
+    margin-left: 1.41%;
+    margin-top: 1.1%;
+    z-index: 102 !important;
+}
+
+#tanka {
+    position: absolute;
+    display: block;
+    margin-left: 1.28%;
+    margin-top: 2.13%;
+    z-index: 102 !important;
+}
+
+#book {
+    position: absolute;
+    display: block;
+    margin-left: 6%;
+    margin-top: 4.2%;
+    z-index: 102 !important;
+}
+
+#buffdoll {
+    position: absolute;
+    display: block;
+    margin-left: 8.5%;
+    margin-top: 2.5%;
+    z-index: 102 !important;
 }
 
 .four {
