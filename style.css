@@ -178,7 +178,26 @@ body {
 }
 
 .four {
-    background: yellow;
+    background-image: url(house_of_equality/03-kitchen/kitchen-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tachang {
+    position: absolute;
+    display: block;
+    margin-left: 2.2%;
+    margin-top: 2.27%;
+    z-index: 102 !important;
+}
+
+#pancake {
+    position: absolute;
+    display: block;
+    margin-left: 3.5%;
+    margin-top: 2.32%;
+    z-index: 102 !important;
 }
 
 .five {

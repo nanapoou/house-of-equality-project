@@ -87,7 +87,7 @@
             <div class="slide three">
                 <div class="a">
                     <div class="dropdown1">
-                        <button onclick="myFunction1()" class="dropbtn">MAP</button>
+                        <button onclick="myFunction2()" class="dropbtn">MAP</button>
                         <div id="myDropdown2" class="dropdown-content">
                             <a href="#home">Home</a>
                             <a href="" onclick="house()">ทฤษฏีก่อนจะเกิดสงคมชายเป็นใหญ่</a>
@@ -106,7 +106,25 @@
                 <img id="buffdoll" src="house_of_equality/02-living-room/lv-item-4.png" width="2%" height="50%">
 
             </div>
-            <div class="slide four"></div>
+            <div class="slide four">
+                <div class="a">
+                    <div class="dropdown1">
+                        <button onclick="myFunction3()" class="dropbtn">MAP</button>
+                        <div id="myDropdown3" class="dropdown-content">
+                            <a href="#home">Home</a>
+                            <a href="" onclick="house()">ทฤษฏีก่อนจะเกิดสงคมชายเป็นใหญ่</a>
+                            <a href="#">สาเหตุของสังคมชายเป็นใหญ่</a>
+                            <a href="#">ความไม่เท่าเทียมคืออะไร</a>
+                            <a href="#">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
+                            <a href="#">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
+                            <a href="#">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
+                            <a href="#">ผู้นำหญิงของประเทศไทย</a>
+                        </div>
+                    </div>
+                </div>
+                <img id="tachang" src="house_of_equality/03-kitchen/kitchen-item-1.png" width="0.7%" height="11%">
+                <img id="pancake" src="house_of_equality/03-kitchen/kitchen-item-2.png" width="2%" height="10%">
+            </div>
             <div class="slide five"></div>
             <div class="slide six"></div>
             <div class="slide seven"></div>
@@ -117,7 +135,7 @@
 </body>
 <script>
     /* When the user clicks on the button, 
-                                                                                                                                                                                                                                                                                                                                                            toggle between hiding and showing the dropdown content */
+                                                                                                                                                                                                                                                                                                                                                                                                    toggle between hiding and showing the dropdown content */
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
@@ -126,8 +144,12 @@
         document.getElementById("myDropdown1").classList.toggle("show");
     }
 
-    function myFunction1() {
+    function myFunction2() {
         document.getElementById("myDropdown2").classList.toggle("show");
+    }
+
+    function myFunction3() {
+        document.getElementById("myDropdown3").classList.toggle("show");
     }
 
     // Close the dropdown if the user clicks outside of it
