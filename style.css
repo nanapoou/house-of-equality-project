@@ -57,7 +57,23 @@ body {
     margin-top: 0.25%;
     z-index: 102 !important;
 }
-#myModal {
+#myModal_locker {
+    position: absolute;
+    /* display: inline-block; */
+    margin-left: 1%;
+    margin-top: 0.25%;
+    z-index: 102 !important;
+}
+
+#myModal_frame {
+    position: absolute;
+    /* display: inline-block; */
+    margin-left: 1%;
+    margin-top: 0.25%;
+    z-index: 102 !important;
+}
+
+#myModal_hing {
     position: absolute;
     /* display: inline-block; */
     margin-left: 1%;
