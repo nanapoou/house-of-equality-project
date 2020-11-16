@@ -60,7 +60,7 @@ body {
     z-index: 102 !important;
 }
 
-#myModal {
+#myModal_locker {
     position: absolute;
     /* display: inline-block; */
     margin-left: 1%;
@@ -136,9 +136,6 @@ body {
 
 
 /* Page Three*/
-
-.three {
-}
 
 #cup {
     position: absolute;
