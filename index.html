@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -8,10 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
-
     <title>House Of Equilty</title>
 </head>
-
 <body>
     <div class="outer-wrapper">
         <div class="wrapper">
@@ -42,16 +39,13 @@
                     <img src="house_of_equality/00-home/cloud.png" class="cloud2">
                     <div class="b">
                         <img src="house_of_equality/00-home/house.png" alt="" class="house">
-
                     </div>
                     <div class="c">
                         <a onclick="house()"><img src="house_of_equality/00-home/explore.png" class="explore"></a>
                     </div>
-
                     <div class="d">
                         <img src="house_of_equality/00-home/home-hint.png" class="hint">
                     </div>
-
                 </div>
             </div>
             <div class="slide two">
@@ -120,6 +114,7 @@
                 <img id="tanka" src="house_of_equality/02-living-room/lv-item-2.png" width="1%" height="9%">
                 <img id="book" src="house_of_equality/02-living-room/lv-item-3.png" width="0.7%" height="6%">
                 <img id="buffdoll" src="house_of_equality/02-living-room/lv-item-4.png" width="2%" height="50%">
+
                 <img id="house" src="house_of_equality/02-living-room/lvng-bg.png" width="100%" height="100%">
             </div>
             <div class="slide four">
@@ -160,6 +155,8 @@
                 </div>
                 <img id="razor" src="house_of_equality/04-bathroom/bath-item-1.png" width="0.4%" height="11%">
                 <img id="bucket" src="house_of_equality/04-bathroom/bath-item-2.png" width="2%" height="18%">
+                <img id="fuclotus" src="house_of_equality/04-bathroom/bath-item-3.png" width="2%" height="22%">
+
                 <img id="fuclotus" src="house_of_equality/04-bathroom/bath-item-3.png" width="2.1%" height="32%">
                 <img id="house" src="house_of_equality/04-bathroom/bath-bg.png" width="100%" height="100%">
             </div>
@@ -172,27 +169,22 @@
 </body>
 <script>
     /* When the user clicks on the button, 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    toggle between hiding and showing the dropdown content */
+    toggle between hiding and showing the dropdown content */
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
-
     function myFunction1() {
         document.getElementById("myDropdown1").classList.toggle("show");
     }
-
     function myFunction2() {
         document.getElementById("myDropdown2").classList.toggle("show");
     }
-
     function myFunction3() {
         document.getElementById("myDropdown3").classList.toggle("show");
     }
-
     function myFunction4() {
         document.getElementById("myDropdown4").classList.toggle("show");
     }
-
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
@@ -206,7 +198,6 @@
             }
         }
     }
-
     function house() {
         event.preventDefault(); //stop href to play
         /*do animate transition*/
@@ -317,7 +308,5 @@
             document.getElementById('myOverlay').style.display = 'none'
         }
     }
-
 </script>
-
 </html>
