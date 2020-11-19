@@ -1,3 +1,4 @@
+/*---normal element---*/
 body {
     margin: 0;
     padding: 0;
@@ -5,183 +6,14 @@ body {
     width: 100%;
 }
 
-.slide {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
-
-.wrapper {
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-    display: flex;
-    flex-direction: row;
-    width: 900vw;
-}
-
-.picture {
-    position: absolute;
-}
-
-.item {
-    cursor: pointer;
-}
-
-/*Page background*/
-
-.background {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#locker {
-    z-index: 102 !important;
-}
-
-#frame {
-    z-index: 10 !important;
-}
-
-#hing {
-    z-index: 1 !important;
-}
-
-#myModal {
-    position: absolute;
-    /* display: inline-block; */
-    margin-left: 1%;
-    margin-top: 0.25%;
-    z-index: 102 !important;
-}
-
-.overlay {
-    z-index: 3;
-    display: none;
-    padding-top: 100px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-
-/* The Modal (background) */
-
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: absolute;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    overflow: auto;
-    /* Enable scroll if needed */
-    margin-left: 11.1% !important;
-    margin-bottom: 10% !important;
-    width: 11.13% !important;
-    height: 100% !important;
-}
-
-
-/* Modal Content/Box */
-
-.modal-content {
-    margin-left: 37.5%;
-    margin-top: 3%;
-    background-color: #fefefe;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 28% !important;
-    height: 80%;
-}
-
-#locker-item {
-    padding: 10px;
-}
-
-
-/* The Close Button */
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#cup {
-    z-index: 102 !important;
-}
-
-#tanka {
-    z-index: 102 !important;
-}
-
-#book {
-    z-index: 102 !important;
-}
-
-#buffdoll {
-    z-index: 102 !important;
-}
-
-#tachang {
-    z-index: 102 !important;
-}
-
-#pancake {
-    z-index: 102 !important;
-}
-
-#razor {
-    z-index: 102 !important;
-}
-
-#bucket {
-    z-index: 102 !important;
-}
-
-#fuclotus {
-    z-index: 102 !important;
-}
-
-.six {
-    background: lime;
-}
-
-.seven {
-    background: pink;
-}
-
-.eight {
-    background: purple;
-}
-
-.nine {
-    background: cyan;
-}
-
 .outer-wrapper {
     width: 100vh;
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-    /*lock page*/
     overflow-y: scroll;
     overflow-x: hidden;
-    position: absolute;
+    position: relative;
 }
 
 .outer-wrapper {
@@ -193,38 +25,45 @@ body {
     display: none;
 }
 
-
-/* .house {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20vh;
-    width: 25%;
-    height: 25%;
+.wrapper {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    display: flex;
+    flex-direction: row;
+    width: 900vw;
 }
 
-.explore {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20vh;
-    width: 25%;
-    height: 25%;
-} */
-
-.house {
-    width: 25%;
-    height: auto;
-    top: 20%;
-    left: 36%;
+.slide {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
-.dropdown1 {
+.picture {
+    z-index: 2;
     position: absolute;
-    display: inline-block;
-    margin-left: 10%;
-    margin-top: 0.25%;
-    z-index: 102 !important;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* function element such as map button, pop-up, hint(undone)*/
+.dropdown {
+    position: absolute !important;
+    z-index: 10;
+    top: 5%;
+    right: 3%;
+    text-align: right;
 }
 
 .dropbtn {
@@ -233,18 +72,9 @@ body {
     font-size: 20pt;
     border: none;
     cursor: pointer;
-    width: 120%;
-    height: 30%;
     font-family: 'Kanit', 'Medium', sans-serif;
     border-radius: 5px;
     box-shadow: 0px 4px 2px #888888;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 85%;
-    margin-top: 2%;
 }
 
 .dropdown a:hover {
@@ -255,46 +85,82 @@ body {
 
 .dropdown-content {
     display: none;
-    position: absolute;
-    min-width: 300px;
     overflow: auto;
     z-index: 1;
     right: -20px;
+    border-radius: 5%;
+    margin-top: 4px;
 }
 
 .dropdown-content a {
     color: rgb(45, 83, 121);
-    padding: 3px 5px;
-    text-decoration: none;
+    padding: 3px 6px;
     display: block;
+    text-decoration: none;
     font-family: 'Kanit', 'Regular', sans-serif;
     text-align: right;
     font-size: 13pt;
+    background-color: hsla(0,0%,100%,0.8);
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color:  hsla(0,0%,0%,0.4);
+    z-index: 4;
+}
+
+
+.myModal {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: 5%;
+    left: 37.5%;
+    display: block;
+    background-color: white;
+    border-radius: 3%;
+    padding: 2%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40pt;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .show {
     display: block;
 }
 
-.explore {
-    width: 15%;
-    height: auto;
-    top: 67%;
-    left: 43%;
+/*------slide 1------*/
+
+#home       {z-index: -1;}
+
+.house      {width: 25%; height: auto; top: 20%; left: 36%;}
+
+.explore    {width: 15%; height: auto; top: 67%; left: 43%;
     animation-name: scaling;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-.explore:hover {
-    animation: scaleexplo 1s forwards;
-}
+.explore:hover {animation: scaleexplo 1s forwards;}
 
-.hint {
-    width: 20%;
-    top: 80%;
-    left: 40%;
+.hint {width: 20%; top: 80%; left: 40%;
     animation-name: MoveUpDown;
     animation-duration: 5s;
     animation-iteration-count: forward;
@@ -326,6 +192,54 @@ body {
     animation-name: C2_animation;
     animation-duration: 7s;
     animation-fill-mode: forwards;
+}
+
+/*------slide 2------*/
+
+.locker     {width: 2%; height: auto; top: 75%; left: 50.6%;}
+
+.frame      {width: 12.5%; height: auto; top: 14%; left: 50%;}
+
+.shelf       {width: 10%; height: auto; top: 7%; left: 18%;}
+
+/*------slide 3------*/
+
+.cup        {width: 6.5%; height: auto; top: 22%; left: 13%;}
+
+.tanka      {width: 8%; height: auto; top: 41%; left: 12%;}
+
+.book       {width: 7%; height: auto; top: 73.5%; left: 53%;}
+
+.buffdoll   {width: 20%; height: auto; top: 30%; left: 73%;}
+
+/*------slide 4------*/
+
+.scale    {width: 6.5%; height: auto; top: 41.5%; left: 20%;}
+
+.pancake    {width: 18%; height: auto; top: 42.5%; left: 34%;}
+
+/*------slide 5------*/
+
+.razor      {width: 3.5%; height: auto; top: 36.3%; left: 22%;}
+
+.bucket     {width: 20%; height: auto; top: 65%; left: 27%;}
+
+.shower   {width: 20%; height: auto; top: 17%; left: 60%;}
+
+.six {
+    background: lime;
+}
+
+.seven {
+    background: pink;
+}
+
+.eight {
+    background: purple;
+}
+
+.nine {
+    background: cyan;
 }
 
 @keyframes C_animation {
