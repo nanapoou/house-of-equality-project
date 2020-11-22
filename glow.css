@@ -1,6 +1,7 @@
 /*--funtion for glow--*/
 
 .glow {
+    display: block;
     transition: 1s;
     transform: scale(2.5);
     animation: glowing;
