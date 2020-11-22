@@ -1,4 +1,5 @@
 /*---normal element---*/
+
 body {
     margin: 0;
     padding: 0;
@@ -58,7 +59,9 @@ body {
     z-index: 1;
 }
 
+
 /* function element such as map button, pop-up, hint(undone)*/
+
 .dropdown {
     position: absolute !important;
     z-index: 10;
@@ -67,7 +70,7 @@ body {
     text-align: right;
 }
 
-.hint_b{
+.hint_b {
     position: absolute !important;
     z-index: 10;
     top: 5%;
@@ -116,7 +119,7 @@ body {
     font-family: 'Kanit', 'Regular', sans-serif;
     text-align: right;
     font-size: 13pt;
-    background-color: hsla(0,0%,100%,0.8);
+    background-color: hsla(0, 0%, 100%, 0.8);
 }
 
 .overlay {
@@ -126,10 +129,9 @@ body {
     left: 0%;
     width: 100%;
     height: 100%;
-    background-color:  hsla(0,0%,0%,0.4);
+    background-color: hsla(0, 0%, 0%, 0.4);
     z-index: 4;
 }
-
 
 .myModal {
     position: absolute;
@@ -161,30 +163,57 @@ body {
     display: block;
 }
 
+
 /*--funtion for glow--*/
-.glow{
-    display: none;
+
+.glow {
+    box-shadow: 1px 1px 100px 50px #f17e57;
+    border-radius: 60% / 60%;
 }
 
+img.pancake.glow {
+    width: 3%;
+    height: 5%;
+    left: 46%;
+    top: 46%;
+}
+
+
 /*------slide 1------*/
+
 #home {
-    z-index: -1;animation-name: zoom;
+    z-index: -1;
+    animation-name: zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
-.house      {width: 25%; height: auto; top: 20%; left: 36%;}
+.house {
+    width: 25%;
+    height: auto;
+    top: 20%;
+    left: 36%;
+}
 
-.explore    {width: 15%; height: auto; top: 67%; left: 43%;
+.explore {
+    width: 15%;
+    height: auto;
+    top: 67%;
+    left: 43%;
     animation-name: scaling;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-.explore:hover {animation: scaleexplo 1s forwards;}
+.explore:hover {
+    animation: scaleexplo 1s forwards;
+}
 
-.hint {width: 20%; top: 80%; left: 40%;
+.hint {
+    width: 20%;
+    top: 80%;
+    left: 40%;
     animation-name: MoveUpDown;
     animation-duration: 5s;
     animation-iteration-count: forward;
@@ -218,77 +247,229 @@ body {
     animation-fill-mode: forwards;
 }
 
+
 /*------slide 2------*/
 
-.locker     {width: 2%; height: 8; top: 75%; left: 50.6%;}
+.locker {
+    width: 2%;
+    height: 8;
+    top: 75%;
+    left: 50.6%;
+}
 
-.frame      {width: 12.5%; height: 29%; top: 14%; left: 50%;}
+.frame {
+    width: 12.5%;
+    height: 29%;
+    top: 14%;
+    left: 50%;
+}
 
-.shelf       {width: 10%; height: 16.5%; top: 11.6%; left: 18%;}
+.shelf {
+    width: 10%;
+    height: 16.5%;
+    top: 11.6%;
+    left: 18%;
+}
+
 
 /*------slide 3------*/
 
-.cup        {width: 6.5%; height: 11.5%; top: 22%; left: 13%;}
+.cup {
+    width: 6.5%;
+    height: 11.5%;
+    top: 22%;
+    left: 13%;
+}
 
-.tanka      {width: 8%; height: 8%; top: 40%; left: 12%;}
+.tanka {
+    width: 8%;
+    height: 8%;
+    top: 40%;
+    left: 12%;
+}
 
-.book       {width: 7%; height: 6%; top: 73%; left: 53%;}
+.book {
+    width: 7%;
+    height: 6%;
+    top: 73%;
+    left: 53%;
+}
 
-.buffdoll   {width: 20%; height: 60%; top: 29%; left: 73%;}
+.buffdoll {
+    width: 20%;
+    height: 60%;
+    top: 29%;
+    left: 73%;
+}
+
 
 /*------slide 4------*/
 
-.scale    {width: 6.5%; height: 11%; top: 41.2%; left: 20%;}
+.scale {
+    width: 6.5%;
+    height: 11%;
+    top: 41.2%;
+    left: 20%;
+}
 
-.pancake    {width: 18%; height: 10%; top: 42.2%; left: 34%;}
+.pancake {
+    width: 18%;
+    height: 10%;
+    top: 42.2%;
+    left: 34%;
+}
+
 
 /*------slide 5------*/
 
-.razor      {width: 3.5%; height: 11%; top: 36.3%; left: 22%;}
+.razor {
+    width: 3.5%;
+    height: 11%;
+    top: 36.3%;
+    left: 22%;
+}
 
-.bucket     {width: 20%; height: 21%; top: 64%; left: 26%;}
+.bucket {
+    width: 20%;
+    height: 21%;
+    top: 64%;
+    left: 26%;
+}
 
-.shower   {width: 20%; height: 32%; top: 16.5%; left: 60%;}
+.shower {
+    width: 20%;
+    height: 32%;
+    top: 16.5%;
+    left: 60%;
+}
+
 
 /*------slide 6------*/
 
-.cloth {width: 16%; height: 45%; top: 39%; left: 0%;}
+.cloth {
+    width: 16%;
+    height: 45%;
+    top: 39%;
+    left: 0%;
+}
 
-.pillow_left {width: 19%; height: 15%; top: 49.6%; left: 30%;}
+.pillow_left {
+    width: 19%;
+    height: 15%;
+    top: 49.6%;
+    left: 30%;
+}
 
-.pillow_right {width: 19%; height: 15%; top: 49.6%; left: 51%;}
+.pillow_right {
+    width: 19%;
+    height: 15%;
+    top: 49.6%;
+    left: 51%;
+}
 
-.cosmetics {width: 7%; height: 10%; top: 51%; left: 83.5%;}
+.cosmetics {
+    width: 7%;
+    height: 10%;
+    top: 51%;
+    left: 83.5%;
+}
+
 
 /*------slide 7------*/
 
-.bin {width: 6%; height: 15%; top: 71%; left: 17.5%;}
+.bin {
+    width: 6%;
+    height: 15%;
+    top: 71%;
+    left: 17.5%;
+}
 
-.chair {width: 16%; height: 20%; top: 32.5%; left: 38%;}
+.chair {
+    width: 16%;
+    height: 20%;
+    top: 32.5%;
+    left: 38%;
+}
 
-.frame_wk {width: 11%; height: 13%; top: 10%; left: 45%;}
+.frame_wk {
+    width: 11%;
+    height: 13%;
+    top: 10%;
+    left: 45%;
+}
+
 
 /*------slide 8------*/
 
-.frame_1 {width: 9%; height: 23%; top: 20%; left: 11%;}
+.frame_1 {
+    width: 9%;
+    height: 23%;
+    top: 20%;
+    left: 11%;
+}
 
-.frame_2 {width: 7.5%; height: 18%; top: 7%; left: 22%;}
+.frame_2 {
+    width: 7.5%;
+    height: 18%;
+    top: 7%;
+    left: 22%;
+}
 
-.frame_3 {width: 9.2%; height: 23.2%; top: 33%; left: 22.2%;}
+.frame_3 {
+    width: 9.2%;
+    height: 23.2%;
+    top: 33%;
+    left: 22.2%;
+}
 
-.frame_4 {width: 7.7%; height: 18.2%; top: 59%; left: 26%;}
+.frame_4 {
+    width: 7.7%;
+    height: 18.2%;
+    top: 59%;
+    left: 26%;
+}
 
-.frame_5 {width: 9.2%; height: 23.2%; top: 7%; left: 36%;}
+.frame_5 {
+    width: 9.2%;
+    height: 23.2%;
+    top: 7%;
+    left: 36%;
+}
 
-.frame_6 {width: 7.5%; height: 24%; top: 4%; left: 55.5%;}
+.frame_6 {
+    width: 7.5%;
+    height: 24%;
+    top: 4%;
+    left: 55.5%;
+}
 
-.frame_7 {width: 7%; height: 17.3%; top: 13%; left: 65%;}
+.frame_7 {
+    width: 7%;
+    height: 17.3%;
+    top: 13%;
+    left: 65%;
+}
 
-.frame_8 {width: 8%; height: 21%; top: 35%; left: 67%;}
+.frame_8 {
+    width: 8%;
+    height: 21%;
+    top: 35%;
+    left: 67%;
+}
 
-.frame_9 {width: 7%; height: 18%; top: 28%; left: 76.5%;}
+.frame_9 {
+    width: 7%;
+    height: 18%;
+    top: 28%;
+    left: 76.5%;
+}
 
-.frame_10 {width: 8%; height: 20%; top: 58%; left: 72%;}
+.frame_10 {
+    width: 8%;
+    height: 20%;
+    top: 58%;
+    left: 72%;
+}
 
 .nine {
     background: cyan;
