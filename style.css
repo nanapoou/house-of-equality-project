@@ -164,21 +164,6 @@ body {
 }
 
 
-/*--funtion for glow--*/
-
-.glow {
-    box-shadow: 1px 1px 100px 50px #f17e57;
-    border-radius: 60% / 60%;
-}
-
-img.pancake.glow {
-    width: 3%;
-    height: 5%;
-    left: 46%;
-    top: 46%;
-}
-
-
 /*------slide 1------*/
 
 #home {
