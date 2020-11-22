@@ -12,9 +12,9 @@ body {
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
-    position: relative;
+    position: absolute;
 }
 
 .outer-wrapper {
@@ -130,7 +130,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: hsla(0, 0%, 0%, 0.4);
-    z-index: 4;
+    z-index: 20;
 }
 
 .myModal {
@@ -175,7 +175,7 @@ body {
 
 .house {
     width: 25%;
-    height: auto;
+    height: 46%;
     top: 20%;
     left: 36%;
 }
@@ -527,6 +527,97 @@ body {
     animation-direction: alternate;
 }
 
+/*------Last Page Button Function (Hide / Show)-----*/
+
+#congrat_1{
+    display: none;
+    font-size: 25px;
+}
+
+#last_page_1{
+    display: show;
+    font-size: 25px;
+}
+
+#congrat_2{
+    display: none;
+    font-size: 25px;
+}
+
+#last_page_2{
+    display: show;
+    font-size: 25px;
+}
+
+#congrat_3{
+    display: none;
+    font-size: 25px;
+}
+
+#last_page_3{
+    display: show;
+    font-size: 25px;
+}
+
+#congrat_4{
+    display: none;
+    font-size: 25px;
+}
+
+#last_page_4{
+    display: show;
+    font-size: 25px;
+}
+
+#congrat_5{
+    display: none;
+    font-size: 25px;
+}
+
+#last_page_5{
+    display: show;
+    font-size: 25px;
+}
+
+#congrat_6{
+    display: none;
+    font-size: 25px;
+}
+
+#last_page_6{
+    display: show;
+    font-size: 25px;
+}
+
+#congrat_7{
+    display: none;
+    font-size: 25px;
+}
+
+#last_page_7{
+    display: show;
+    font-size: 25px;
+}
+
+#congrat_8{
+    display: none;
+    font-size: 25px;
+}
+
+#last_page_8{
+    display: show;
+    font-size: 25px;
+}
+
+#congrat_9{
+    display: none;
+    font-size: 25px;
+}
+
+#last_page_9{
+    display: show;
+    font-size: 25px;
+}
 @keyframes float_a {
     from {
         margin-top: 0%;
