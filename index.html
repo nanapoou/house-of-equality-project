@@ -4,51 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="glow.css" />
+    <link rel="icon" href="house_of_equality/00-home/house.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
-<<<<<<< Updated upstream
-=======
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
->>>>>>> Stashed changes
     <title>House Of Equilty</title>
 </head>
 
 <body>
+
     <div class="outer-wrapper">
-        <div class="wrapper">
-            <div class="slide one" id="first">
-                <!-- <div class="house">
-                    <img src="house of equality/00-home/house.png" alt="" width="100%">
-                </div>
-                <div class="d-flex justify-content-center explore">
-                    <a href="https://www.w3schools.com"><img src="house of equality/00-home/explore.png" width="100%"></a>
-                </div> -->
-                <div class="wrapper-one">
-                    <div class="a">
-                        <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn">MAP</button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a href="#first">Home</a>
-                                <a href="#second">ทฤษฏีก่อนจะเกิดสงคมชายเป็นใหญ่</a>
-                                <a href="#third">สาเหตุของสังคมชายเป็นใหญ่</a>
-                                <a href="#fourth">ความไม่เท่าเทียมคืออะไร</a>
-                                <a href="#fifth">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
-                                <a href="#">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
-                                <a href="#">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
-                                <a href="#">ผู้นำหญิงของประเทศไทย</a>
-                            </div>
+        <div class="wrapper" style="background: rgb(229, 233, 236);">
+
+            <!-- ----------------------- slide 1 ----------------------- -->
+
+            <div id="home" class="slide" style="background: rgb(229, 233, 236);">
+                <div class="animation">
+                    <div class="dropdown">
+                        <button onclick="mapDropdown(1)" class="dropbtn">MAP</button>
+                        <div id="myDropdown1" class="dropdown-content">
+                            <a href="#home" onclick="changePage('home')">Home</a>
+                            <a href="#house" onclick="changePage('house')">ทฤษฏีก่อนจะเกิดสังคมชายเป็นใหญ่</a>
+                            <a href="#livingRoom" onclick="changePage('livingRoom')">สาเหตุของสังคมชายเป็นใหญ่</a>
+                            <a href="#kitchen" onclick="changePage('kitchen')">ความไม่เท่าเทียมคืออะไร</a>
+                            <a href="#bathRoom" onclick="changePage('bathRoom')">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
+                            <a href="#bedRoom" onclick="changePage('bedRoom')">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
+                            <a href="#workspace" onclick="changePage('workspace')">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
+                            <a href="#gallery" onclick="changePage('gallery')">ผู้นำหญิงของประเทศไทย</a>
                         </div>
                     </div>
+
                     <img src="house_of_equality/00-home/cloud.png" class="cloud">
+
                     <img src="house_of_equality/00-home/cloud.png" class="cloud2">
-<<<<<<< Updated upstream
-                    <div class="b">
-                        <img src="house_of_equality/00-home/house.png" alt="" class="house">
-=======
 
                     <img src="house_of_equality/00-home/house.png" class="house picture">
 
@@ -176,21 +169,32 @@
                 <img class="picture item scale" src="house_of_equality/03-kitchen/kitchen-item-1.png" onclick="showModal(3,'house_of_equality/03-kitchen/kt-item-1-text.png');">
                 <img class="picture item pancake glow" src="house_of_equality/03-kitchen/kc-item-2-glow.png">
 
-                <img class="picture item pancake" src="house_of_equality/03-kitchen/kitchen-item-2.png" onclick="showModal(3,'house_of_equality/03-kitchen/kt-item-1-text.png');">
+                <img class="picture item pancake" src="house_of_equality/03-kitchen/kitchen-item-2.png" onclick="showModal(3,'house_of_equality/03-kitchen/kt-item-2-text.png');">
 
                 <div id="modal3" class="overlay" onclick="closeModal_window(3)">
                     <div class="myModal w3-animate-bottom">
                         <span class="close"  onclick="closeModal(3)">&times;</span>
                         <img class="modal-item" src="house_of_equality/01-hallway/item-3-text-edit.png" width="100%" height="100%">
->>>>>>> Stashed changes
                     </div>
-                    <div class="c">
-                        <a href="#second"><img src="house_of_equality/00-home/explore.png" class="explore"></a>
+                </div>
+            </div>
+
+            <!-- ----------------------- slide 5 ----------------------- -->
+
+            <div id="bathRoom" class="slide">
+
+                <div class="dropdown">
+                    <button onclick="mapDropdown(5)" class="dropbtn">MAP</button>
+                    <div id="myDropdown5" class="dropdown-content">
+                        <a href="#home" onclick="changePage('home')">Home</a>
+                        <a href="#house" onclick="changePage('house')">ทฤษฏีก่อนจะเกิดสังคมชายเป็นใหญ่</a>
+                        <a href="#livingRoom" onclick="changePage('livingRoom')">สาเหตุของสังคมชายเป็นใหญ่</a>
+                        <a href="#kitchen" onclick="changePage('kitchen')">ความไม่เท่าเทียมคืออะไร</a>
+                        <a href="#bathRoom" onclick="changePage('bathRoom')">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
+                        <a href="#bedRoom" onclick="changePage('bedRoom')">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
+                        <a href="#workspace" onclick="changePage('workspace')">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
+                        <a href="#gallery" onclick="changePage('gallery')">ผู้นำหญิงของประเทศไทย</a>
                     </div>
-<<<<<<< Updated upstream
-                    <div class="d">
-                        <img src="house_of_equality/00-home/home-hint.png" class="hint">
-=======
                 </div>
 
                 <button class="hint_b" onclick="hint()">HINT</button>
@@ -211,38 +215,27 @@
                     <div class="myModal w3-animate-bottom">
                         <span class="close" onclick="closeModal(4)">&times;</span>
                         <img class="modal-item" src="house_of_equality/01-hallway/item-3-text-edit.png" width="100%" height="100%">
->>>>>>> Stashed changes
                     </div>
                 </div>
             </div>
-            <div class="slide two" id="second">
-                <div class="a">
-                    <div class="dropdown1">
-                        <button onclick="myFunction1()" class="dropbtn">MAP</button>
-                        <div id="myDropdown1" class="dropdown-content">
-                            <a href="#first">Home</a>
-                            <a href="#second">ทฤษฏีก่อนจะเกิดสงคมชายเป็นใหญ่</a>
-                            <a href="#third">สาเหตุของสังคมชายเป็นใหญ่</a>
-                            <a href="#fourth">ความไม่เท่าเทียมคืออะไร</a>
-                            <a href="#fifth">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
-                            <a href="#">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
-                            <a href="#">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
-                            <a href="#">ผู้นำหญิงของประเทศไทย</a>
-                        </div>
+
+            <!-- ----------------------- slide 6 ----------------------- -->
+
+            <div id="bedRoom" class="slide">
+
+                <div class="dropdown">
+                    <button onclick="mapDropdown(6)" class="dropbtn">MAP</button>
+                    <div id="myDropdown6" class="dropdown-content">
+                        <a href="#home" onclick="changePage('home')">Home</a>
+                        <a href="#house" onclick="changePage('house')">ทฤษฏีก่อนจะเกิดสังคมชายเป็นใหญ่</a>
+                        <a href="#livingRoom" onclick="changePage('livingRoom')">สาเหตุของสังคมชายเป็นใหญ่</a>
+                        <a href="#kitchen" onclick="changePage('kitchen')">ความไม่เท่าเทียมคืออะไร</a>
+                        <a href="#bathRoom" onclick="changePage('bathRoom')">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
+                        <a href="#bedRoom" onclick="changePage('bedRoom')">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
+                        <a href="#workspace" onclick="changePage('workspace')">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
+                        <a href="#gallery" onclick="changePage('gallery')">ผู้นำหญิงของประเทศไทย</a>
                     </div>
                 </div>
-<<<<<<< Updated upstream
-                <img id="locker" src="house_of_equality/01-hallway/item-3.png" width="0.3%" height="8%">
-                <img id="frame" src="house_of_equality/01-hallway/item-2.png" width="1%" height="26.5%">
-                <img id="hing" src="house_of_equality/01-hallway/item-1.png" width="1.25%" height="20%">
-                <img id="house" src="house_of_equality/01-hallway/hallway-bg-edit.png" width="100%" height="100%">
-                <!-- The Locker Modal -->
-                <div id="myModal_locker" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close close_locker">&times;</span>
-                        <img id="locker-item" src="house_of_equality/01-hallway/item-3-text-edit.png" width="100%" height="100%">
-=======
 
                 <button class="hint_b" onclick="hint()">HINT</button>
 
@@ -266,25 +259,26 @@
                     <div class="myModal w3-animate-bottom">
                         <span class="close" onclick="closeModal(5)">&times;</span>
                         <img class="modal-item" src="house_of_equality/01-hallway/item-3-text-edit.png" width="100%" height="100%">
->>>>>>> Stashed changes
                     </div>
                 </div>
-                <!-- The Frame Modal -->
-                <div id="myModal_frame" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close close_frame">&times;</span>
-                        <img id="frame-item" src="house_of_equality/01-hallway/item-2-text-edit.png" width="100%" height="100%">
+            </div>
+            <!-- ----------------------- slide 7 ----------------------- -->
+
+            <div id="workspace" class="slide">
+
+                <div class="dropdown">
+                    <button onclick="mapDropdown(7)" class="dropbtn">MAP</button>
+                    <div id="myDropdown7" class="dropdown-content">
+                        <a href="#home" onclick="changePage('home')">Home</a>
+                        <a href="#house" onclick="changePage('house')">ทฤษฏีก่อนจะเกิดสังคมชายเป็นใหญ่</a>
+                        <a href="#livingRoom" onclick="changePage('livingRoom')">สาเหตุของสังคมชายเป็นใหญ่</a>
+                        <a href="#kitchen" onclick="changePage('kitchen')">ความไม่เท่าเทียมคืออะไร</a>
+                        <a href="#bathRoom" onclick="changePage('bathRoom')">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
+                        <a href="#bedRoom" onclick="changePage('bedRoom')">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
+                        <a href="#workspace" onclick="changePage('workspace')">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
+                        <a href="#gallery" onclick="changePage('gallery')">ผู้นำหญิงของประเทศไทย</a>
                     </div>
                 </div>
-<<<<<<< Updated upstream
-                <!-- The Hing Modal -->
-                <div id="myModal_hing" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close close_hing">&times;</span>
-                        <img id="hing-item" src="house_of_equality/01-hallway/item-1-text-edit.png" width="100%" height="100%">
-=======
 
                 <button class="hint_b" onclick="hint()">HINT</button>
 
@@ -304,35 +298,28 @@
                     <div class="myModal w3-animate-bottom">
                         <span class="close" onclick="closeModal(6)">&times;</span>
                         <img class="modal-item" src="house_of_equality/01-hallway/item-3-text-edit.png" width="100%" height="100%">
->>>>>>> Stashed changes
                     </div>
                 </div>
-                <div class="overlay" id="myOverlay"></div>
             </div>
-            <div class="slide three" id="third">
-                <div class="a">
-                    <div class="dropdown1">
-                        <button onclick="myFunction2()" class="dropbtn">MAP</button>
-                        <div id="myDropdown2" class="dropdown-content">
-                            <a href="#first">Home</a>
-                            <a href="#second">ทฤษฏีก่อนจะเกิดสงคมชายเป็นใหญ่</a>
-                            <a href="#third">สาเหตุของสังคมชายเป็นใหญ่</a>
-                            <a href="#fourth">ความไม่เท่าเทียมคืออะไร</a>
-                            <a href="#fifth">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
-                            <a href="#">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
-                            <a href="#">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
-                            <a href="#">ผู้นำหญิงของประเทศไทย</a>
-                        </div>
+
+            <!-- ----------------------- slide 8 ----------------------- -->
+
+            <div id="gallery" class="slide">
+
+                <div class="dropdown">
+                    <button onclick="mapDropdown(8)" class="dropbtn">MAP</button>
+                    <div id="myDropdown8" class="dropdown-content">
+                        <a href="#home" onclick="changePage('home')">Home</a>
+                        <a href="#house" onclick="changePage('house')">ทฤษฏีก่อนจะเกิดสังคมชายเป็นใหญ่</a>
+                        <a href="#livingRoom" onclick="changePage('livingRoom')">สาเหตุของสังคมชายเป็นใหญ่</a>
+                        <a href="#kitchen" onclick="changePage('kitchen')">ความไม่เท่าเทียมคืออะไร</a>
+                        <a href="#bathRoom" onclick="changePage('bathRoom')">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
+                        <a href="#bedRoom" onclick="changePage('bedRoom')">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
+                        <a href="#workspace" onclick="changePage('workspace')">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
+                        <a href="#gallery" onclick="changePage('gallery')">ผู้นำหญิงของประเทศไทย</a>
                     </div>
                 </div>
-                <img id="cup" src="house_of_equality/02-living-room/lv-item-1.png" width="0.7%" height="11%">
-                <img id="tanka" src="house_of_equality/02-living-room/lv-item-2.png" width="1%" height="9%">
-                <img id="book" src="house_of_equality/02-living-room/lv-item-3.png" width="0.7%" height="6%">
-                <img id="buffdoll" src="house_of_equality/02-living-room/lv-item-4.png" width="2%" height="50%">
 
-<<<<<<< Updated upstream
-                <img id="house" src="house_of_equality/02-living-room/lvng-bg.png" width="100%" height="100%">
-=======
                 <button class="hint_b" onclick="hint()">HINT</button>
 
                 <img class="background" src="house_of_equality/07-gallery/gal-bg.png">
@@ -375,79 +362,72 @@
                         <img class="modal-item" src="house_of_equality/01-hallway/item-3-text-edit.png" width="100%" height="100%">
                     </div>
                 </div>
->>>>>>> Stashed changes
             </div>
-            <div class="slide four" id="fourth">
-                <div class="a">
-                    <div class="dropdown1">
-                        <button onclick="myFunction3()" class="dropbtn">MAP</button>
-                        <div id="myDropdown3" class="dropdown-content">
-                            <a href="#first">Home</a>
-                            <a href="#second">ทฤษฏีก่อนจะเกิดสงคมชายเป็นใหญ่</a>
-                            <a href="#third">สาเหตุของสังคมชายเป็นใหญ่</a>
-                            <a href="#fourth">ความไม่เท่าเทียมคืออะไร</a>
-                            <a href="#fifth">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
-                            <a href="#">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
-                            <a href="#">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
-                            <a href="#">ผู้นำหญิงของประเทศไทย</a>
-                        </div>
-                    </div>
-                </div>
-                <img id="tachang" src="house_of_equality/03-kitchen/kitchen-item-1.png" width="0.7%" height="11%">
-                <img id="pancake" src="house_of_equality/03-kitchen/kitchen-item-2.png" width="2%" height="10%">
-                <img id="house" src="house_of_equality/03-kitchen/kitchen-bg.png" width="100%" height="100%">
-            </div>
-            <div class="slide five" id="fifth">
-                <div class="a">
-                    <div class="dropdown1">
-                        <button onclick="myFunction4()" class="dropbtn">MAP</button>
-                        <div id="myDropdown4" class="dropdown-content">
-                            <a href="#first">Home</a>
-                            <a href="#second">ทฤษฏีก่อนจะเกิดสงคมชายเป็นใหญ่</a>
-                            <a href="#third">สาเหตุของสังคมชายเป็นใหญ่</a>
-                            <a href="#fourth">ความไม่เท่าเทียมคืออะไร</a>
-                            <a href="#fifth">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
-                            <a href="#">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
-                            <a href="#">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
-                            <a href="#">ผู้นำหญิงของประเทศไทย</a>
-                        </div>
-                    </div>
-                </div>
-                <img id="razor" src="house_of_equality/04-bathroom/bath-item-1.png" width="0.4%" height="11%">
-                <img id="bucket" src="house_of_equality/04-bathroom/bath-item-2.png" width="2%" height="18%">
+            <!-- ----------------------- slide 9 ----------------------- -->
 
-                <img id="fuclotus" src="house_of_equality/04-bathroom/bath-item-3.png" width="2.1%" height="32%">
-                <img id="house" src="house_of_equality/04-bathroom/bath-bg.png" width="100%" height="100%">
+            <div id="end1" class="slide" style="background: rgb(229, 233, 236);">
+                <div class="dropdown">
+                    <button onclick="mapDropdown(9)" class="dropbtn">MAP</button>
+                    <div id="myDropdown9" class="dropdown-content">
+                        <a href="#home" onclick="changePage('home')">Home</a>
+                        <a href="#house" onclick="changePage('house')">ทฤษฏีก่อนจะเกิดสังคมชายเป็นใหญ่</a>
+                        <a href="#livingRoom" onclick="changePage('livingRoom')">สาเหตุของสังคมชายเป็นใหญ่</a>
+                        <a href="#kitchen" onclick="changePage('kitchen')">ความไม่เท่าเทียมคืออะไร</a>
+                        <a href="#bathRoom" onclick="changePage('bathRoom')">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
+                        <a href="#bedRoom" onclick="changePage('bedRoom')">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
+                        <a href="#workspace" onclick="changePage('workspace')">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
+                        <a href="#gallery" onclick="changePage('gallery')">ผู้นำหญิงของประเทศไทย</a>
+                    </div>
+                </div>
+
+                <img src="house_of_equality/00-home/house.png" class="house_end picture">
+
+                <img src="house_of_equality/08-final/text-undone.png" class="undone picture">
+
             </div>
-            <div class="slide six"></div>
-            <div class="slide seven"></div>
-            <div class="slide eight"></div>
-            <div class="slide nine"></div>
+
+            <!-- ----------------------- slide 10 ----------------------- -->
+
+            <div id="end2" class="slide" style="background: rgb(229, 233, 236);">
+                <div class="dropdown">
+                    <button onclick="mapDropdown(10)" class="dropbtn">MAP</button>
+                    <div id="myDropdown10" class="dropdown-content">
+                        <a href="#home" onclick="changePage('home')">Home</a>
+                        <a href="#house" onclick="changePage('house')">ทฤษฏีก่อนจะเกิดสังคมชายเป็นใหญ่</a>
+                        <a href="#livingRoom" onclick="changePage('livingRoom')">สาเหตุของสังคมชายเป็นใหญ่</a>
+                        <a href="#kitchen" onclick="changePage('kitchen')">ความไม่เท่าเทียมคืออะไร</a>
+                        <a href="#bathRoom" onclick="changePage('bathRoom')">ทำไมถึงควรมีการเปลี่ยนแปลง</a>
+                        <a href="#bedRoom" onclick="changePage('bedRoom')">ระหว่างชายเป็นผู้นำกับหญิงเป็นผู้นำ</a>
+                        <a href="#workspace" onclick="changePage('workspace')">หน่วยงานในประเทศไทยที่ผู้หญิงมีบทบาท</a>
+                        <a href="#gallery" onclick="changePage('gallery')">ผู้นำหญิงของประเทศไทย</a>
+                    </div>
+                </div>
+
+                <img src="house_of_equality/00-home/house.png" class="house_end picture">
+
+                <img src="house_of_equality/08-final/text-done.png" class="done picture">
+
+                <img class="picture cloud_end1 float" src="house_of_equality/00-home/cloud.png">
+
+                <img class="picture cloud_end2 float" src="house_of_equality/00-home/cloud.png">
+
+                <img class="picture cloud_end3 float" src="house_of_equality/00-home/cloud.png">
+
+                <img class="picture cloud_end4 float" src="house_of_equality/00-home/cloud.png">
+
+                <img class="picture cloud_end5 float" src="house_of_equality/00-home/cloud.png">
+
+                <img class="picture cloud_end6 float" src="house_of_equality/00-home/cloud.png">
+
+            </div>
         </div>
     </div>
 </body>
 <script>
-    /* When the user clicks on the button, 
-                                                        toggle between hiding and showing the dropdown content */
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
+    function mapDropdown(num) {
+        document.getElementById("myDropdown" + num).classList.toggle("show");
     }
 
-    function myFunction1() {
-        document.getElementById("myDropdown1").classList.toggle("show");
-    }
-
-    function myFunction2() {
-        document.getElementById("myDropdown2").classList.toggle("show");
-    }
-
-    function myFunction3() {
-        document.getElementById("myDropdown3").classList.toggle("show");
-    }
-
-    function myFunction4() {
-        document.getElementById("myDropdown4").classList.toggle("show");
-    }
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
@@ -462,114 +442,50 @@
         }
     }
 
-    // function house() {
-    //     event.preventDefault(); //stop href to play
-    //     /*do animate transition*/
-    //     var left = document.getElementById("house").offsetLeft;
-    //     $(".wrapper").animate({
-    //         marginTop: "-" + left
-    //     }, 1000);
-    //     /*move page to that page*/
-    //     setTimeout(function() {
-    //         window.location.href = "#second";
-    //     }, 1000);
-    // }
-    // ******************************************** MODAL CONTENT ******************************************* //
-    // ******************************************** MODAL CONTENT ******************************************* //
-    // ******************************************** MODAL CONTENT ******************************************* //
-    // ******************************************** MODAL CONTENT ******************************************* //
-    // ******************************************** MODAL CONTENT ******************************************* //
-    // ******************************************** MODAL CONTENT ******************************************* //
-    // ******************************************** MODAL CONTENT ******************************************* //
-
-
-    // ************************** LOCKER MODAL ********************************* //
-    // Get the modal
-    var modal_locker = document.getElementById("myModal_locker");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("locker");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close_locker")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal_locker.style.display = "block";
-        document.getElementById('myOverlay').style.display = 'block'
+    function showModal(num, img) {
+        modal = document.querySelector("#modal" + num);
+        modal.style.display = "block";
+        var img_test = img;
+        modal.querySelector(".modal-item").src = img
     }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal_locker.style.display = "none";
-        document.getElementById('myOverlay').style.display = 'none'
+    function closeModal(num) {
+        document.getElementById("modal" + num).style.display = "none";
     }
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal_locker.style.display = "none";
-            document.getElementById('myOverlay').style.display = 'none'
+    function closeModal_window(num) {
+        if ($(event.target).hasClass("overlay")) {
+            document.getElementById("modal" + num).style.display = "none";
         }
     }
 
-    // ************************** FRAME MODAL ********************************* //
-    // Get the modal
-    var modal_frame = document.getElementById("myModal_frame");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("frame");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close_frame")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal_frame.style.display = "block";
-        document.getElementById('myOverlay').style.display = 'block'
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal_frame.style.display = "none";
-        document.getElementById('myOverlay').style.display = 'none'
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal_frame.style.display = "none";
-            document.getElementById('myOverlay').style.display = 'none'
+    function changePage(page) {
+        console.log(page);
+        event.preventDefault(); //stop href to play
+        /*do animate transition*/
+        var left = document.getElementById(page).offsetLeft;
+        $(".wrapper").animate({
+            marginTop: "-" + left
+        }, 1000);
+        /*move page to that page*/
+        setTimeout(function() {
+            window.location.href = "#" + page;
+        }, 1000);
+        /*for hide glow*/
+        var glow = document.getElementsByClassName("glow");
+        /*select all class*/
+        for (var i=0;i<glow.length; i++) {
+            glow[i].style.display = "none";
         }
+
     }
 
-    // ************************** HING MODAL ********************************* //
-    // Get the modal
-    var modal_hing = document.getElementById("myModal_hing");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("hing");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close_hing")[0];
-
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-        modal_hing.style.display = "block";
-        document.getElementById('myOverlay').style.display = 'block'
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal_hing.style.display = "none";
-        document.getElementById('myOverlay').style.display = 'none'
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal_hing.style.display = "none";
-            document.getElementById('myOverlay').style.display = 'none'
+    //hint
+    function hint() {
+        var glow = document.getElementsByClassName("glow");
+        /*select all class*/
+        for (var i=0;i<glow.length; i++) {
+            glow[i].style.display = "block";
         }
     }
 </script>
