@@ -1,3 +1,5 @@
+/*---normal element---*/
+
 body {
     margin: 0;
     padding: 0;
@@ -5,356 +7,14 @@ body {
     width: 100%;
 }
 
-.slide {
-    width: 100vw;
-    height: 100vh;
-}
-
-.wrapper {
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-    display: flex;
-    flex-direction: row;
-    width: 900vw;
-}
-
-.one {
-    background: rgb(229, 233, 236);
-}
-
-
-/* Page Two */
-
-.two {
-    background-color: rgb(231, 211, 207);
-}
-
-#locker {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    /* margin-left: 5.58%; */
-    margin-left: 50.2vw;
-    /* margin-top: 3.9%;
-    margin-top: 540px; */
-    margin-top: 75vh;
-    z-index: 102 !important;
-}
-
-#frame {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 5.4%;
-    /* margin-left: 101vh; */
-    /* margin-top: 0.82%;
-    margin-top: 113px; */
-    margin-top: 15.7vh;
-    z-index: 10 !important;
-}
-
-#hing {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 1.85%;
-    /* margin-top: 0.55%;
-    margin-top: 60px; */
-    margin-top: 10vh;
-    z-index: 1 !important;
-}
-
-.dropdown1 {
-    position: absolute;
-    display: inline-block;
-    margin-left: 10%;
-    margin-top: 0.25%;
-    z-index: 102 !important;
-}
-
-.dropdown1 a:hover {
-    text-decoration: none;
-}
-
-.dropdown1-content {
-    display: none;
-    position: absolute;
-    background-color: hsla(0, 100%, 100%, 0.3);
-    min-width: 300px;
-    overflow: auto;
-    z-index: 1;
-    right: -20px;
-}
-
-.dropdown1-content a {
-    color: rgb(45, 83, 121);
-    padding: 3px 5px;
-    text-decoration: none;
-    display: block;
-    font-family: 'Kanit', 'Regular', sans-serif;
-    text-align: right;
-    font-size: 13pt;
-}
-
-.dropdown1 a:hover {
-    color: rgb(241, 126, 87);
-    font-family: 'Kanit', 'Medium', sans-serif;
-}
-
-#myModal_locker {
-    position: absolute;
-    /* display: inline-block; */
-    margin-left: 1%;
-    margin-top: 0.25%;
-    z-index: 102 !important;
-}
-
-#myModal_frame {
-    position: absolute;
-    /* display: inline-block; */
-    margin-left: 1%;
-    margin-top: 0.25%;
-    z-index: 102 !important;
-}
-
-#myModal_hing {
-    position: absolute;
-    /* display: inline-block; */
-    margin-left: 1%;
-    margin-top: 0.25%;
-    z-index: 102 !important;
-}
-
-.overlay {
-    z-index: 3;
-    display: none;
-    padding-top: 100px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-
-/* The Modal (background) */
-
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: absolute;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    overflow: auto;
-    /* Enable scroll if needed */
-    margin-left: 11.1% !important;
-    margin-bottom: 10% !important;
-    width: 11.13% !important;
-    height: 100% !important;
-}
-
-
-/* Modal Content/Box */
-
-.modal-content {
-    margin-left: 37.5%;
-    margin-top: 3%;
-    background-color: #fefefe;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 28% !important;
-    height: 80%;
-}
-
-#locker-item {
-    padding: 10px;
-}
-
-#frame-item {
-    padding: 10px;
-}
-
-#hing-item {
-    padding: 10px;
-}
-
-
-/* The Close Button */
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-/* Page Three*/
-
-.three {
-    background-image: url(house_of_equality/02-living-room/lvng-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#cup {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 1.41%;
-    /* margin-top: 1.1%; */
-    /* margin-top: 165px; */
-    margin-top: 22.6vh;
-    z-index: 102 !important;
-}
-
-#tanka {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 1.28%;
-    /* margin-top: 2.13%; */
-    /* margin-top: 283px; */
-    margin-top: 39.1vh;
-    z-index: 102 !important;
-}
-
-#book {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 6%;
-    /* margin-top: 4.2%; */
-    /* margin-top: 525px; */
-    margin-top: 73vh;
-    z-index: 102 !important;
-}
-
-#buffdoll {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 8.5%;
-    /* margin-top: 2.5%;
-    margin-top: 290px; */
-    margin-top: 39vh;
-    /* z-index: 102 !important; */
-}
-
-
-/*page four*/
-
-.four {
-    background-image: url(house_of_equality/03-kitchen/kitchen-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#tachang {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 2.2%;
-    /* margin-top: 2.27%;
-    margin-top: 298px; */
-    margin-top: 41.3vh;
-    z-index: 102 !important;
-}
-
-#pancake {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 3.5%;
-    /* margin-top: 2.32%;
-    margin-top: 305px; */
-    margin-top: 42.3vh;
-    z-index: 102 !important;
-}
-
-
-/*page five*/
-
-.five {
-    background-image: url(house_of_equality/04-bathroom/bath-bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    ;
-}
-
-#razor {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 2.45%;
-    /* margin-top: 1.95%;
-    margin-top: 260px; */
-    margin-top: 36.2vh;
-    z-index: 102 !important;
-}
-
-#bucket {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 2.7%;
-    /* margin-top: 3.8%;
-    margin-top: 480px; */
-    margin-top: 68vh;
-    z-index: 102 !important;
-}
-
-#fuclotus {
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin-left: 6.7%;
-    /* margin-top: 1.4%; */
-    /* margin-top: 125px; */
-    margin-top: 16.5vh;
-    z-index: 102 !important;
-}
-
-.six {
-    background: lime;
-}
-
-.seven {
-    background: pink;
-}
-
-.eight {
-    background: purple;
-}
-
-.nine {
-    background: cyan;
-}
-
 .outer-wrapper {
     width: 100vh;
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-    /*lock page*/
-    /*for scrollr bar*/
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
-    position: absolute;
+    position: relative;
 }
 
 .outer-wrapper {
@@ -366,70 +26,63 @@ body {
     display: none;
 }
 
-
-/* .house {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20vh;
-    width: 25%;
-    height: 25%;
-}
-.explore {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20vh;
-    width: 25%;
-    height: 25%;
-} */
-
-.bgtwo {
-    background-image: url('hallway-bg-edit.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+.wrapper {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    display: flex;
+    flex-direction: row;
+    width: 1000vw;
 }
 
-.wrapper-one {
-    display: block;
-    grid-gap: 10px;
+.slide {
     width: 100vw;
     height: 100vh;
+    position: relative;
+    background: rgb(229, 233, 236);
+}
+
+.picture {
+    z-index: 2;
     position: absolute;
-    animation-name: zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
 }
 
-.a {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.item {
+    cursor: pointer;
 }
 
-.b {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    /* padding-bottom: 0%; */
+.background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
-.house {
-    width: 25%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    display: block;
+
+/* function element such as map button, pop-up, hint(undone)*/
+
+.dropdown {
+    position: absolute !important;
+    z-index: 10;
+    top: 5%;
+    right: 3%;
+    text-align: right;
 }
 
-.c {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.d {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.hint_b {
+    position: absolute !important;
+    z-index: 10;
+    top: 5%;
+    left: 3%;
+    background-color: white;
+    color: rgb(241, 126, 87);
+    font-size: 20pt;
+    border: none;
+    cursor: pointer;
+    font-family: 'Kanit', 'Medium', sans-serif;
+    border-radius: 5px;
+    box-shadow: 0px 4px 2px #888888;
 }
 
 .dropbtn {
@@ -438,68 +91,104 @@ body {
     font-size: 20pt;
     border: none;
     cursor: pointer;
-    width: 120%;
-    height: 30%;
     font-family: 'Kanit', 'Medium', sans-serif;
     border-radius: 5px;
     box-shadow: 0px 4px 2px #888888;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 85%;
-    margin-top: 2%;
-    z-index: 102 !important;
-}
-
 .dropdown a:hover {
     text-decoration: none;
+    color: rgb(241, 126, 87);
+    font-family: 'Kanit', 'Medium', sans-serif;
 }
 
 .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: hsla(0, 100%, 100%, 0.8);
-    border-radius: 5px;
-    min-width: 300px;
     overflow: auto;
     z-index: 1;
     right: -20px;
-    z-index: 103 !important;
+    border-radius: 5%;
+    margin-top: 4px;
 }
 
 .dropdown-content a {
     color: rgb(45, 83, 121);
-    padding: 3px 5px;
-    text-decoration: none;
+    padding: 3px 6px;
     display: block;
+    text-decoration: none;
     font-family: 'Kanit', 'Regular', sans-serif;
     text-align: right;
     font-size: 13pt;
+    background-color: hsla(0, 0%, 100%, 0.8);
 }
 
-.dropdown a:hover {
-    color: rgb(241, 126, 87);
-    font-family: 'Kanit', 'Medium', sans-serif;
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.4);
+    z-index: 4;
+}
+
+.myModal {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: 5%;
+    left: 37.5%;
+    display: block;
+    background-color: white;
+    border-radius: 3%;
+    padding: 2%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40pt;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .show {
     display: block;
 }
 
+
+/*------slide 1------*/
+
+#home {
+    z-index: -1;
+    animation-name: zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.house {
+    width: 25%;
+    height: auto;
+    top: 20%;
+    left: 36%;
+}
+
 .explore {
     width: 15%;
     height: auto;
-    margin-left: 45%;
-    margin-right: auto;
-    display: block;
-    margin-top: 1%;
+    top: 67%;
+    left: 43%;
     animation-name: scaling;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    cursor: pointer;
 }
 
 .explore:hover {
@@ -507,11 +196,9 @@ body {
 }
 
 .hint {
-    margin-left: 41.8%;
-    margin-right: auto;
-    display: block;
-    margin-top: 4%;
     width: 20%;
+    top: 80%;
+    left: 40%;
     animation-name: MoveUpDown;
     animation-duration: 5s;
     animation-iteration-count: forward;
@@ -543,6 +230,310 @@ body {
     animation-name: C2_animation;
     animation-duration: 7s;
     animation-fill-mode: forwards;
+}
+
+
+/*------slide 2------*/
+
+.locker {
+    width: 2%;
+    height: 8;
+    top: 75%;
+    left: 50.6%;
+}
+
+.frame {
+    width: 12.5%;
+    height: 29%;
+    top: 14%;
+    left: 50%;
+}
+
+.shelf {
+    width: 10%;
+    height: 16.5%;
+    top: 11.6%;
+    left: 18%;
+}
+
+
+/*------slide 3------*/
+
+.cup {
+    width: 6.5%;
+    height: 11.5%;
+    top: 22%;
+    left: 13%;
+}
+
+.tanka {
+    width: 8%;
+    height: 8%;
+    top: 40%;
+    left: 12%;
+}
+
+.book {
+    width: 7%;
+    height: 6%;
+    top: 73%;
+    left: 53%;
+}
+
+.buffdoll {
+    width: 20%;
+    height: 60%;
+    top: 29%;
+    left: 73%;
+}
+
+
+/*------slide 4------*/
+
+.scale {
+    width: 6.5%;
+    height: 11%;
+    top: 41.2%;
+    left: 20%;
+}
+
+.pancake {
+    width: 18%;
+    height: 10%;
+    top: 42.2%;
+    left: 34%;
+}
+
+
+/*------slide 5------*/
+
+.razor {
+    width: 3.5%;
+    height: 11%;
+    top: 36.3%;
+    left: 22%;
+}
+
+.bucket {
+    width: 20%;
+    height: 21%;
+    top: 64%;
+    left: 26%;
+}
+
+.shower {
+    width: 20%;
+    height: 32%;
+    top: 16.5%;
+    left: 60%;
+}
+
+
+/*------slide 6------*/
+
+.cloth {
+    width: 16%;
+    height: 45%;
+    top: 39%;
+    left: 0%;
+}
+
+.pillow_left {
+    width: 19%;
+    height: 15%;
+    top: 49.6%;
+    left: 30%;
+}
+
+.pillow_right {
+    width: 19%;
+    height: 15%;
+    top: 49.6%;
+    left: 51%;
+}
+
+.cosmetics {
+    width: 7%;
+    height: 10%;
+    top: 51%;
+    left: 83.5%;
+}
+
+
+/*------slide 7------*/
+
+.bin {
+    width: 6%;
+    height: 15%;
+    top: 71%;
+    left: 17.5%;
+}
+
+.chair {
+    width: 16%;
+    height: 20%;
+    top: 32.5%;
+    left: 38%;
+}
+
+.frame_wk {
+    width: 11%;
+    height: 13%;
+    top: 10%;
+    left: 45%;
+}
+
+
+/*------slide 8------*/
+
+.frame_1 {
+    width: 9%;
+    height: 23%;
+    top: 20%;
+    left: 11%;
+}
+
+.frame_2 {
+    width: 7.5%;
+    height: 18%;
+    top: 7%;
+    left: 22%;
+}
+
+.frame_3 {
+    width: 9.2%;
+    height: 23.2%;
+    top: 33%;
+    left: 22.2%;
+}
+
+.frame_4 {
+    width: 7.7%;
+    height: 18.2%;
+    top: 59%;
+    left: 26%;
+}
+
+.frame_5 {
+    width: 9.2%;
+    height: 23.2%;
+    top: 7%;
+    left: 36%;
+}
+
+.frame_6 {
+    width: 7.5%;
+    height: 24%;
+    top: 4%;
+    left: 55.5%;
+}
+
+.frame_7 {
+    width: 7%;
+    height: 17.3%;
+    top: 13%;
+    left: 65%;
+}
+
+.frame_8 {
+    width: 8%;
+    height: 21%;
+    top: 35%;
+    left: 67%;
+}
+
+.frame_9 {
+    width: 7%;
+    height: 18%;
+    top: 28%;
+    left: 76.5%;
+}
+
+.frame_10 {
+    width: 8%;
+    height: 20%;
+    top: 58%;
+    left: 72%;
+}
+
+/*------slide 9------*/
+.house_end {
+    width: 25%;
+    height: 46%;
+    top: 8%;
+    left: 36%;
+}
+
+.undone {
+    width: 27%;
+    top: 58%;
+    left: 37%;
+}
+
+/*------slide 10------*/
+
+.done {
+    width: 27%;
+    top: 58%;
+    left: 37%;
+}
+
+.cloud_end1 {
+    width: 10%;
+    height: 10%;
+    top: 30%;
+    left: 5%;
+}
+
+.cloud_end2 {
+    width: 10%;
+    height: 10%;
+    top: 27%;
+    left: 80%;
+}
+
+.cloud_end3 {
+    width: 15%;
+    height: 15%;
+    top: 45%;
+    left: 13%;
+}
+
+.cloud_end4 {
+    width: 15%;
+    height: 15%;
+    top: 40%;
+    left: 65%;
+}
+
+.cloud_end5 {
+    width: 35%;
+    height: 35%;
+    top: 70%;
+    left: 0%;
+}
+
+.cloud_end6 {
+    width: 35%;
+    height: 35%;
+    top: 70%;
+    left: 70%;
+}
+
+.float{
+    animation-name: float_a;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes float_a {
+    from {
+        margin-top: 0%;
+    }
+    to {
+        margin-top: -2%;
+    }
 }
 
 @keyframes C_animation {
@@ -590,22 +581,24 @@ body {
 
 @keyframes MoveUpDown {
     from {
-        margin-top: 20%;
+        top: 100%;
         opacity: 0;
     }
     to {
-        margin-top: 4%;
+        top: 80%;
         opacity: 1;
     }
 }
 
 @keyframes scaleexplo {
     from {
-        margin-left: 45%;
+        top: 67%;
+        left: 43%;
         width: 15%;
     }
     to {
-        margin-left: 43%;
+        top: 66.5%;
+        left: 41%;
         width: 20%;
     }
 }
