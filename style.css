@@ -31,7 +31,7 @@ body {
     transform-origin: top left;
     display: flex;
     flex-direction: row;
-    width: 900vw;
+    width: 1000vw;
 }
 
 .slide {
@@ -456,8 +456,84 @@ body {
     left: 72%;
 }
 
-.nine {
-    background: cyan;
+/*------slide 9------*/
+.house_end {
+    width: 25%;
+    height: 46%;
+    top: 8%;
+    left: 36%;
+}
+
+.undone {
+    width: 27%;
+    top: 58%;
+    left: 37%;
+}
+
+/*------slide 10------*/
+
+.done {
+    width: 27%;
+    top: 58%;
+    left: 37%;
+}
+
+.cloud_end1 {
+    width: 10%;
+    height: 10%;
+    top: 30%;
+    left: 5%;
+}
+
+.cloud_end2 {
+    width: 10%;
+    height: 10%;
+    top: 27%;
+    left: 80%;
+}
+
+.cloud_end3 {
+    width: 15%;
+    height: 15%;
+    top: 45%;
+    left: 13%;
+}
+
+.cloud_end4 {
+    width: 15%;
+    height: 15%;
+    top: 40%;
+    left: 65%;
+}
+
+.cloud_end5 {
+    width: 35%;
+    height: 35%;
+    top: 70%;
+    left: 0%;
+}
+
+.cloud_end6 {
+    width: 35%;
+    height: 35%;
+    top: 70%;
+    left: 70%;
+}
+
+.float{
+    animation-name: float_a;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes float_a {
+    from {
+        margin-top: 0%;
+    }
+    to {
+        margin-top: -2%;
+    }
 }
 
 @keyframes C_animation {
