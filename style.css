@@ -118,7 +118,7 @@ body {
     text-decoration: none;
     font-family: 'Kanit', 'Regular', sans-serif;
     text-align: right;
-    font-size: 13pt;
+    font-size: 106%;
     background-color: hsla(0, 0%, 100%, 0.8);
 }
 
@@ -531,92 +531,92 @@ body {
 
 #congrat_1{
     display: none;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #last_page_1{
     display: show;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #congrat_2{
     display: none;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #last_page_2{
     display: show;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #congrat_3{
     display: none;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #last_page_3{
     display: show;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #congrat_4{
     display: none;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #last_page_4{
     display: show;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #congrat_5{
     display: none;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #last_page_5{
     display: show;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #congrat_6{
     display: none;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #last_page_6{
     display: show;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #congrat_7{
     display: none;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #last_page_7{
     display: show;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #congrat_8{
     display: none;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #last_page_8{
     display: show;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #congrat_9{
     display: none;
-    font-size: 25px;
+    font-size: 125%;
 }
 
 #last_page_9{
     display: show;
-    font-size: 25px;
+    font-size: 125%;
 }
 @keyframes float_a {
     from {
