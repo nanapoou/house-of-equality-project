@@ -527,6 +527,16 @@ body {
     animation-direction: alternate;
 }
 
+
+/* Count Content Opened */
+.amount{
+    position: absolute !important;
+    top: 12%;
+    left: 3.3%;
+    color: rgb(241, 126, 87);
+    font-size: 20pt;
+}
+
 /*------Last Page Button Function (Hide / Show)-----*/
 
 #congrat_1{
