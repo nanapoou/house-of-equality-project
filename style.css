@@ -12,7 +12,7 @@ body {
     height: 100vw;
     transform: rotate(-90deg) translateX(-100vh);
     transform-origin: top left;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
 }
@@ -31,7 +31,7 @@ body {
     transform-origin: top left;
     display: flex;
     flex-direction: row;
-    width: 1100vw;
+    width: 1000vw;
 }
 
 .slide {
@@ -553,15 +553,15 @@ body {
 }
 
 .cloud_end5 {
-    width: 35%;
-    height: 35%;
+    width: 27%;
+    height: 27%;
     top: 70%;
-    left: 0%;
+    left: 2%;
 }
 
 .cloud_end6 {
-    width: 35%;
-    height: 35%;
+    width: 27%;
+    height: 27%;
     top: 70%;
     left: 70%;
 }
