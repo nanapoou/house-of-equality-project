@@ -31,7 +31,7 @@ body {
     transform-origin: top left;
     display: flex;
     flex-direction: row;
-    width: 1000vw;
+    width: 1100vw;
 }
 
 .slide {
