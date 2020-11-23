@@ -531,10 +531,10 @@ body {
 /* Count Content Opened */
 .amount{
     position: absolute !important;
-    top: 12%;
-    left: 3.3%;
+    top: 4%;
+    left: 9%;
     color: rgb(241, 126, 87);
-    font-size: 20pt;
+    font-size: 15pt;
 }
 
 /*------Last Page Button Function (Hide / Show)-----*/

@@ -74,7 +74,7 @@
 
                 <button class="hint_b" onclick="hint()">HINT</button>
 
-                <div class="amount">0/29</div>
+                <div class="amount">Item Found : <br> 0/29</div>
 
                 <img class="background" src="house_of_equality/01-hallway/hallway-bg-edit.png">
 
@@ -121,7 +121,7 @@
 
                 <button class="hint_b" onclick="hint()">HINT</button>
 
-                <div class="amount">0/29</div>
+                <div class="amount">Item Found : <br> 0/29</div>
 
                 <img class="background" src="house_of_equality/02-living-room/lvng-bg.png">
 
@@ -170,7 +170,7 @@
 
                 <button class="hint_b" onclick="hint()">HINT</button>
 
-                <div class="amount">0/29</div>
+                <div class="amount">Item Found : <br> 0/29</div>
 
                 <img class="background" src="house_of_equality/03-kitchen/kitchen-bg.png">
 
@@ -214,7 +214,7 @@
 
                 <button class="hint_b" onclick="hint()">HINT</button>
 
-                <div class="amount">0/29</div>
+                <div class="amount">Item Found : <br> 0/29</div>
 
                 <img class="background" src="house_of_equality/04-bathroom/bath-bg.png">
 
@@ -258,7 +258,7 @@
 
                 <button class="hint_b" onclick="hint()">HINT</button>
 
-                <div class="amount">0/29</div>
+                <div class="amount">Item Found : <br> 0/29</div>
 
                 <img class="background" src="house_of_equality/05-bedroom/br-bg.png">
 
@@ -305,7 +305,7 @@
 
                 <button class="hint_b" onclick="hint()">HINT</button>
 
-                <div class="amount">0/29</div>
+                <div class="amount">Item Found : <br> 0/29</div>
 
                 <img class="background" src="house_of_equality/06-workspace/wk-bg.png">
 
@@ -349,7 +349,7 @@
 
                 <button class="hint_b" onclick="hint()">HINT</button>
 
-                <div class="amount">0/29</div>
+                <div class="amount">Item Found : <br> 0/29</div>
 
                 <img class="background" src="house_of_equality/07-gallery/gal-bg.png">
 
@@ -685,13 +685,13 @@
         }
 
         /* Count Content Function */
-        document.getElementsByClassName("amount")[0].innerHTML = count + "/29";
-        document.getElementsByClassName("amount")[1].innerHTML = count + "/29";
-        document.getElementsByClassName("amount")[2].innerHTML = count + "/29";
-        document.getElementsByClassName("amount")[3].innerHTML = count + "/29";
-        document.getElementsByClassName("amount")[4].innerHTML = count + "/29";
-        document.getElementsByClassName("amount")[5].innerHTML = count + "/29";
-        document.getElementsByClassName("amount")[6].innerHTML = count + "/29";
+        document.getElementsByClassName("amount")[0].innerHTML = "Item Found : " + "<br>" + count + "/29";
+        document.getElementsByClassName("amount")[1].innerHTML = "Item Found : " + "<br>" + count + "/29";
+        document.getElementsByClassName("amount")[2].innerHTML = "Item Found : " + "<br>" + count + "/29";
+        document.getElementsByClassName("amount")[3].innerHTML = "Item Found : " + "<br>" + count + "/29";
+        document.getElementsByClassName("amount")[4].innerHTML = "Item Found : " + "<br>" + count + "/29";
+        document.getElementsByClassName("amount")[5].innerHTML = "Item Found : " + "<br>" + count + "/29";
+        document.getElementsByClassName("amount")[6].innerHTML = "Item Found : " + "<br>" + count + "/29";
     }
 
     function closeModal(num) {
