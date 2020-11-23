@@ -3,76 +3,82 @@
 .glow {
     display: block;
     transition: 1s;
-    transform: scale(2.5);
     animation: glowing;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 2s;
     z-index: 1;
+    filter: contrast(500%);
 }
 
 .shelf.glow {
-    transform: scale(2.3);
+    transform: scale(1.95);
+    width: 9%;
+    left: 18.5%;
 }
 
 .locker.glow {
-    transform: scale(5.5);
+    transform: scale(4.0);
     left: 50.7%;
     top: 75.2%;
 }
 
-.pancake.glow {
-    transform: scale(2.2);
-    top: 39.3%;
-    width: 13%;
-    left: 36.5%;
-    height: 15%;
-}
-
-.scale.glow {
-    transform: scale(3);
-}
-
 .frame.glow {
+    transform: scale(2.2);
     height: 21%;
     width: 10%;
-    left: 51.33%;
+    left: 51.26%;
     top: 18%;
 }
 
+.pancake.glow {
+    transform: scale(2);
+    top: 39.9%;
+    width: 13%;
+    left: 36.5%;
+    height: 14.7%;
+}
+
+.scale.glow {
+    transform: scale(2.48);
+    top: 41%;
+    left: 19.97%;
+}
+
 .picture.item.cup.glow {
-    transform: scale(2.7);
-    width: 7%;
-    left: 12.8%;
+    transform: scale(2.48);
+    width: 6%;
+    left: 13.3%;
 }
 
 .tanka.glow {
-    transform: scale(3);
+    transform: scale(2.5);
     left: 12.5%;
-    top: 38%;
+    top: 38.54%;
     width: 7%;
     height: 11%;
 }
 
 .book.glow {
-    transform: scale(4);
+    transform: scale(2.5);
     height: 12%;
     top: 70%;
+    filter: contrast(700%);
 }
 
 .picture.item.buffdoll.glow {
-    top: 42%;
     animation: glowing-buff;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 2s;
-    width: 15%;
-    height: 35%;
-    left: 75%;
+    width: 22%;
+    left: 72%;
 }
 
 .razor.glow {
-    transform: scale(2.8);
+    left: 21.5%;
+    width: 4.5%;
+    transform: scale(2.7);
     animation: glowing-razor;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -80,46 +86,51 @@
 }
 
 .bucket.glow {
-    transform: scale(1.65);
+    transform: scale(1.4);
     height: 24%;
+    width: 20.2%;
     top: 62%
 }
 
 .shower.glow {
-    transform: scale(1.5);
+    transform: scaleY(1.52) scaleX(1.44);
 }
 
 .cloth.glow {
-    transform: scale(1.2);
-    top: 44%;
-    left: 1.9%;
+    transform: scaleX(1.07) scaleY(1.2);
+    top: 43.6%;
+    left: 0.6%;
 }
 
 .pillow_left.glow {
-    width: 13%;
-    left: 32.5%;
+    transform: scaleX(1.49) scaleY(2);
+    left: 30%;
 }
 
 .pillow_right.glow {
-    width: 13%;
-    left: 54%;
+    transform: scaleX(1.49) scaleY(2);
+    left: 51.01%;
 }
 
 .cosmetics.glow {
-    transform: scale(3);
+    transform: scaleX(2.3) scaleY(2.67);
 }
 
 .bin.glow {
-    transform: scale(2.5);
+    transform: scalex(2.4) scaleY(2.085);
 }
 
 .chair.glow {
-    top: 26.7%;
-    height: 15%;
+    top: 26%;
+    transform: scaleX(2.28) scaleY(1.65);
+}
+
+.frame_wk.glow {
+    transform: scaleX(1.8) scaleY(2.4);
 }
 
 .frame_1.glow {
-    transform: scale(2.1);
+    transform: scaleX(2) scaleY(2.08);
     height: 20%;
     top: 21.5%;
 }
@@ -131,21 +142,18 @@
 }
 
 .frame_3.glow {
-    transform: scale(2.1);
-    height: 20%;
-    top: 34.5%;
+    transform: scaleX(1.98) scaleY(1.84);
+    top: 33%;
 }
 
 .frame_4.glow {
-    transform: scale(2.1);
-    height: 17%;
-    top: 59.55%;
+    transform: scaleX(2.12) scaleY(1.89);
+    top: 59%;
 }
 
 .frame_5.glow {
-    transform: scale(2.1);
-    height: 19.5%;
-    top: 9%;
+    transform: scaleX(2) scaleY(1.81);
+    top: 7%;
 }
 
 .frame_6.glow {
@@ -161,21 +169,19 @@
 }
 
 .frame_8.glow {
-    transform: scale(2.15);
-    height: 17.5%;
-    top: 37%;
+    transform: scaleX(2) scaleY(1.83);
+    top: 35%;
 }
 
 .frame_9.glow {
-    transform: scale(2.2);
+    transform: scaleX(2) scaleY(2.1);
     height: 16%;
     top: 29%;
 }
 
 .frame_10.glow {
-    transform: scale(2.25);
-    height: 16%;
-    top: 60%;
+    transform: scaleX(2.15) scaleY(1.8);
+    top: 58.5%;
 }
 
 @keyframes glowing {
@@ -183,7 +189,7 @@
         opacity: 0%;
     }
     50% {
-        opacity: 80%;
+        opacity: 100%;
     }
     100% {
         opacity: 0%;
@@ -193,15 +199,15 @@
 @keyframes glowing-buff {
     0% {
         opacity: 0%;
-        transform: scale(2.3);
+        transform: scale(1.27);
     }
     50% {
-        opacity: 70%;
-        transform: scale(2.3);
+        opacity: 100%;
+        transform: scale(1.27);
     }
     100% {
         opacity: 0%;
-        transform: scale(2.3);
+        transform: scale(1.27);
     }
 }
 
