@@ -70,10 +70,32 @@ body {
     text-align: right;
 }
 
-.hint_b {
-    position: absolute !important;
-    z-index: 10;
+.test{
     top: 5%;
+    left: 3%;
+    position: absolute;
+    width: auto;
+    height: auto;
+    text-align: justify;
+}
+
+/* Count Content Opened */
+.amount{
+    display: inherit;
+    position: relative !important;
+    left: 3%;
+    color: rgb(241, 126, 87);
+    font-size: 15pt;
+    font-family: 'Kanit', 'Regular', sans-serif;
+    margin-top: 10%;
+    line-height: 100%;
+}
+
+.hint_b {
+    display: inherit;
+    position: relative !important;
+    z-index: 10;
+    top: 0% !important;
     left: 3%;
     background-color: white;
     color: rgb(241, 126, 87);
@@ -525,16 +547,6 @@ body {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-}
-
-
-/* Count Content Opened */
-.amount{
-    position: absolute !important;
-    top: 4%;
-    left: 9%;
-    color: rgb(241, 126, 87);
-    font-size: 15pt;
 }
 
 /*------Last Page Button Function (Hide / Show)-----*/
